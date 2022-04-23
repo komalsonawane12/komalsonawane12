@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Csharp_shell
+{
+
+    public class Program 
+    {
+    public	int rollno=95;
+     public string	name="SNEHA";
+    }
+    class exam:Program
+    {
+  public static void Main()
+        {
+	exam n=new exam();
+Console.WriteLine(n.rollno);
+Console.WriteLine( n.name);
+	Console.ReadLine();
+        }
+    }
+}
