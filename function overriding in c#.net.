@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8 
+{
+    public class Program 
+    {
+	public virtual void showinfo()
+	{
+		Console.WriteLine("base class method");
+        Console.ReadLine();
+	}
+    }
+    class bike :Program
+    {
+	public override void showinfo()
+	{
+		Console.WriteLine("derived class method");
+        Console.ReadLine();
+	}
+
+        public static void Main()
+        {
+			 bike b1=new bike();
+			b1.showinfo();
+			b1.showinfo();
+        }
+    }
+}
