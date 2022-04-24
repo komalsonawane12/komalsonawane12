@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace CSharp_Shell
+{
+    class Program
+     
+   {
+int r;
+  string n;
+Program(int rollno,string name)
+     {
+r=rollno;
+n=name;
+Console.WriteLine(r+"\t"+n);
+Console.ReadLine();
+  }
+Program()
+      {
+Console.WriteLine("Constructor called");
+Console.ReadLine();
+      }
+public static void Main(string [] args)
+{
+	Program p=new Program();
+Program p1=new Program(95,"sneha");
+	}
+      }
+ }
+
+        
