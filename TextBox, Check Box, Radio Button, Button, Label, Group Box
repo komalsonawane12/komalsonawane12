@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lbl1.Text = textBox1.Text;
+            if (checkBox1.Checked == true)
+            {
+                lbl2.Text = checkBox1.Text;
+                if (checkBox2.Checked == true)
+                {
+                    lbl2.Text = checkBox2.Text;
+                }
+                if (radioButton1.Checked == true)
+                {
+                    lbl3.Text = radioButton1.Text;
+                }
+                lbl3.Text = radioButton2.Text;
+            }
+        }
+    }
+}
