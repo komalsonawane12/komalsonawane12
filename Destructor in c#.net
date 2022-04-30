@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication11
+{
+    
+ 
+    class Program
+    {
+        int  a,n,i;
+        Program(int a)
+        {
+            for(i=1;i<=10;i++)
+            {
+                n=a*i;
+                Console.WriteLine(n);
+            }
+           
+        }
+        //destructor
+        ~Program()
+        {
+            Console.WriteLine("     Destructor called automatically...");
+            Console.ReadLine();
+        }
+       
+        static void Main(string[] args)
+        {
+            int a;
+            Console.WriteLine("Enter  the Number :");
+            a=Convert.ToInt32(Console.ReadLine());
+            Program p1 = new Program(a);
+            Console.ReadLine();
+        }
+    }
+}
