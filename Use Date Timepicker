@@ -1,0 +1,31 @@
+Assingment.27 
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            int d;
+            DateTime fistdate = Convert.ToDateTime(dateTimePicker1.Text);
+            DateTime Seconddate = Convert.ToDateTime(dateTimePicker2.Text);
+            d = fistdate.Subtract(Seconddate).Days;
+            textBox1.Text = Math.Abs(d).ToString();
+
+
+        }
+    }
+}
